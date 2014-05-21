@@ -1,0 +1,142 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  font-family: arial;
+  background-color: #fafafa;
+  padding: 0;
+  margin: 0; }
+
+#top {
+  background-color: #de6b3e;
+  border-bottom: 5px solid #c75022;
+  height: 50px;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.28);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.28);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.28);
+  margin-bottom: 10px; }
+  #top #info {
+    *zoom: 1;
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto; }
+    #top #info:before, #top #info:after {
+      content: " ";
+      display: table; }
+    #top #info:after {
+      clear: both; }
+    #top #info h3 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      padding: 0;
+      margin: 0;
+      margin-left: 10px;
+      color: #fcfcfc;
+      font-weight: normal;
+      margin-top: 12px; }
+      #top #info h3:last-child {
+        margin-right: 0; }
+      #top #info h3 a {
+        color: white;
+        text-decoration: none; }
+    #top #info #realtime_info {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-top: 15px;
+      text-align: right;
+      color: #fcfcfc; }
+      #top #info #realtime_info:last-child {
+        margin-right: 0; }
+
+.block, #container #block_info, #container #block_chart_1, #container #block_chart_2, #container #block_chart_3, #container #block_chart_4, #container #block_chart_5 {
+  border: 1px solid #dddddd;
+  padding: 0px;
+  color: #333;
+  background-color: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 350px;
+  border-radius: 0.1875em;
+  -webkit-box-shadow: 0px 2px 4px 0px #e6e6e6;
+  -moz-box-shadow: 0px 2px 4px 0px #e6e6e6;
+  box-shadow: 0px 2px 4px 0px #e6e6e6;
+  text-align: center; }
+  .block header, #container #block_info header, #container #block_chart_1 header, #container #block_chart_2 header, #container #block_chart_3 header, #container #block_chart_4 header, #container #block_chart_5 header {
+    height: 40px;
+    background-color: #3185b9; }
+    .block header h3, #container #block_info header h3, #container #block_chart_1 header h3, #container #block_chart_2 header h3, #container #block_chart_3 header h3, #container #block_chart_4 header h3, #container #block_chart_5 header h3 {
+      color: #fcfcfc;
+      padding: 0;
+      margin: 0;
+      padding-top: 12px;
+      font-weight: normal;
+      font-size: 1.0em; }
+  .block canvas, #container #block_info canvas, #container #block_chart_1 canvas, #container #block_chart_2 canvas, #container #block_chart_3 canvas, #container #block_chart_4 canvas, #container #block_chart_5 canvas {
+    margin: 10px; }
+
+#container {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #container:before, #container:after {
+    content: " ";
+    display: table; }
+  #container:after {
+    clear: both; }
+  #container #block_info {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    height: 300px; }
+    #container #block_info:last-child {
+      margin-right: 0; }
+    #container #block_info img {
+      width: 220px;
+      margin-top: 30px;
+      margin-bottom: 10px; }
+  #container #block_chart_1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-right: 0;
+    height: 300px; }
+    #container #block_chart_1:last-child {
+      margin-right: 0; }
+  #container #block_chart_2 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #container #block_chart_2:last-child {
+      margin-right: 0; }
+  #container #block_chart_3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    #container #block_chart_3:last-child {
+      margin-right: 0; }
+  #container #block_chart_4 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0; }
+    #container #block_chart_4:last-child {
+      margin-right: 0; }
+  #container #block_chart_5 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #container #block_chart_5:last-child {
+      margin-right: 0; }

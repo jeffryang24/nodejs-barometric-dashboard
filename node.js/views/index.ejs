@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barometric</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <header id="top">
+        <div id="info">
+            <h3>Barometric readings @ <a href="http://en.wikipedia.org/wiki/Meulebeke">Meulebeke</a></h3>
+            <div id="realtime_info"></div>
+        </div>
+    </header>
+    
+    <div id="container">
+                
+        <div id="block_info">
+            <header>
+                <h3>Trend</h3>
+            </header>
+            <img id="weatherImg" src="static/cloudy.png" /><br>
+            <p><span id="trend"></span></p>
+        </div>
+        
+        <div id="block_chart_1">
+            <header>
+                <h3>Last 3 hours</h3>
+            </header>
+            <canvas id="chart_1" ></canvas>
+        </div>
+
+        <div id="block_chart_2">
+            <header>
+                <h3>Last 24 hours</h3>
+            </header>            
+            <canvas id="chart_2" ></canvas>
+        </div>        
+         
+        
+        <div id="block_chart_3">
+            <header>
+                <h3>Max/Min last 7 days (1)</h3>
+            </header>
+            <canvas id="chart_3" ></canvas>
+        </div>
+
+        <div id="block_chart_4">
+            <header>
+                <h3>Max/Min last 7 days (2)</h3>
+            </header>            
+            <canvas id="chart_4" ></canvas>
+        </div>                
+
+        <div id="block_chart_5">
+            <header>
+                <h3>Last 31 days</h3>
+            </header>            
+            <canvas id="chart_5" ></canvas>
+        </div>                
+        
+        
+    </div>
+    
+</body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/static/jquery-1.11.0.min.js"></script>
+    <script src="/static/underscore-min.js"></script>
+    <script src="/static/chart.min.js"></script>
+    <script src="/static/barometric.js"></script>
+</html>

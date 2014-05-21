@@ -1,0 +1,40 @@
+
+///////////////////////////////
+
+db.datapoints.aggregate([ 
+{ $group : { 
+        _id : null,
+        average_temp: { $avg : "$temperature"  },
+        average_pressure: { $avg : "$pressure"  } 
+    } 
+},
+{ $project : { 
+        _id:0,
+        average_temp: 1,
+        average_pressure : 1
+    } 
+ }])
+
+/////////////////////////////////
+
+db.datapoints.aggregate([
+        { $match : { datetime : { $lt : new Date() }  }  },
+        { $project : { _id:1 , datetime: 1 , pressure : 1 } },
+        { $sort : { datetime : -1 }} 
+])
+
+/////////////////////////////////
+
+db.datapoints.aggregate([  
+        { $match : { datetime : { $lt : new Date() }  }  }, 
+        { $project : { _id:1 , datetime: 1 , pressure : 1 } },  
+        { $sort : { datetime : -1 }}
+])
+
+//////////////////////////////////
+
+db.datapoints.aggregate([ 
+        { $match : { datetime : { $gt : new Date(ISODate().getTime() - 1000 * 60 * 60) }  }  },
+        { $project : { _id:1 , datetime: 1 , pressure : 1 } }, 
+        { $sort : { datetime : -1 }}  
+])

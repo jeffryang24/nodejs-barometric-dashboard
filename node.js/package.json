@@ -1,0 +1,12 @@
+{
+  "name": "Barometric",
+  "description": "Process the barometric pressure data",
+  "author": "Glenn De Backer <glenn@simplicity.be>",
+  "dependencies": {
+      "express": "*",
+      "mongodb": "*",
+      "underscore": "*",
+      "ejs": "*",
+      "socket.io":"*"
+  }
+}
